@@ -7,12 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { InfoComponent } from './info/info.component';
+import { MdComponent } from './md/md.component';
+import { AltServicesComponent } from './info/alt-services/alt-services.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     InfoComponent,
+    MdComponent,
+    AltServicesComponent,
   ],
   imports: [
     BrowserModule,

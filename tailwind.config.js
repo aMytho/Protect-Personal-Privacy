@@ -4,7 +4,13 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'lapis': "#176087"
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography') // Improve default text styles.
+  ],
 }

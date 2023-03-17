@@ -20,3 +20,15 @@
 h1, h2, h3, h4, h5, h6, p, a {
     color: aliceblue;
 }
+
+ol, li {
+    list-style: disc !important;
+}
+
+markdown a {
+    color: blanchedalmond !important;
+}
+
+markdown a:hover {
+    color: bisque;
+}

@@ -66,13 +66,19 @@ Youtube
 
 Audacity is one of the best tools for editing audio files. It has a large assortment of features to do pretty much anything. It is also very easy to learn. This is a great replacement for tools like Reaper. While this app is open source, one of the latest updates did add telementry. You can block it with a firewall setting or you can install a fork of the original project (Tenacity).
 
+![Audacity Interface](/assets/img/audacity.png)
+
 #### Gimp
 
 Gimp is a replacement for adboe photoshop. It allows you to do all of the same things in photoshop, but you can do much more. More importantly, it is free and open source. It can run on nearly any hardware but it does have a high learning curve. Similar to Adobe, you need to put in some time to learn the software if you want to use it efficently.
 
+![GIMP (General Image Manipulataion Interface) Interface](/assets/img/gimp.png)
+
 #### Krita
 
 Krita is an open source app for creating art. It primarily targets the paint style, but it can do many kinds of art. You can also do some light photo editing within the software. You can merge vector, paint, shapes, image, and other layers in a single file.
+
+![Krita](/assets/img/krita.png)
 
 #### Lainon AI
 
@@ -86,19 +92,27 @@ Mastadon does not have any ads or trackers. This is because each homeserver is r
 
 Its functionality can be compared to email. You must choose a service(gmail, outlook, protonmail) and follow its terms of service. You can talk to other users on the same service and you can communicate with other services. Mastadon works the same way.
 
+![Mastadon Mobile Interface](/assets/img/mastadon.webp)
+
 #### Matrix
 
 Matrix is a decentralized chat platform. It is very similar to Discord in many aspects. Matrix supports end to end encryption, automatic deletion of messages, and many other privacy features. Matrix can be access by a number of free clients. Since the API is completly open, you can read matrix messages from anywhere (phone, pc, even the command line!). You can run your own instance of Matrix or you can use an existing server. Using the bridge feature, you can link Matrix to other platforms such as IRC, Discord, and Telegram. While the primacy goal of Matrix is text communication, you can also do voice and video communication over WebRTC.
 
+![Matrix Element Interface](/assets/img/matrix.png)
+
 #### NewPipe
 
 NewPipe is an Android app to access videos and streams on Youtube. It has no ads and no tracking software. It offers the full functionality that the real app has. Additionally, several features (such as video downloads) are avalaible without a Youtube Red subscription. Due to these features, it is not on the Google Play store and must be downloaded via their [Github Page](https://github.com/TeamNewPipe/NewPipe/releases) or on [F-Droid](https://f-droid.org/packages/org.schabi.newpipe/).
+
+![Newpipe Video Feed](/assets/img/newpipe.png)
 
 #### Glimesh
 
 Glimesh is an open source alternative to streaming apps like Twitch, Youtube, and Trovo. It is community funded and can be ran on your own server (for private streaming). Alternatively, you can access the public version at [Glimesh.tv](https://glimesh.tv).
 
 While it is rather small compared to other services, it does have many of the same features.
+
+![Glimesh Smashbets Channel](/assets/img/glimesh.png)
 
 #### OBS
 
@@ -110,14 +124,22 @@ ProtonMail is a privacy centered email service. They offer E2E (end to end) encr
 
 Like other email services, Protonmail offers calendar, storage, and a VPN service.
 
+![Protonmail Creation](/assets/img/protonmail.png)
+
 #### Signal
 
 Signal offers free, highly encrypted messaging. You can set individual controls for each message. You can have messages delete themselves after a certain amount of time has passed. It is one of the best services for wireless communication. For many people, this can replace SMS messaging and other messaging services over the internet such as What's App, Fabebook Messenger, and others. Signal also supports video and voice chat for alternative communication.
+
+![Signal Messaging](/assets/img/signal.png)
 
 #### Thunderbird
 
 Thunderbird is an open source app to view emails from any device. It is **not** and email service. Instead, it uses mail protocols to access your emails from any location. It has integrations with many of the existing email providers such as Gmail, Outlook, yahoo, and more. It can also connect to RSS feeds to provide a custom new service. This is a very handy feature.
 
+![Thunderbird Personal Feed](/assets/img/thunderbird.png)
+
 #### VSCodium
 
 This is an open source version of Visual Studio Code. VSC is open source. However, the version that Microsoft releases is not open source. They add several tracking and telementry aspects. This fork simply provides a build of the original code without any privacy invasive elements. It is free, and has all the same features. It also allows you to use alternative extension stores. You can install extensions from any source. It does have less extensions thatn the normal marketplace, but they respect your privacy. If you can't find the extension you need, you can use a config hack to access the original store.
+
+![VSC](/assets/img/vscodium.png)

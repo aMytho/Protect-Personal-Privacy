@@ -1,6 +1,6 @@
 ## Communication
 
-Our communicaion is one of the most important things to protect. Our communication is a window into how we feel and think. Companies know this and try eo access it using many different means.
+Our communicaion is one of the most important things to protect. Our communication is a window into how we feel and think. Companies know this and try to access it using many different means.
 
 ### SMS (Text Messaging)
 

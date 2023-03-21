@@ -4,6 +4,7 @@ import { AltServicesComponent } from './info/alt-services/alt-services.component
 
 const routes: Routes = [
   {path: "cases", loadChildren: () => import('./case/case.module').then(m => m.CaseModule)},
+  {path: "guide", loadChildren: () => import("./guide/guide.module").then(m => m.GuideModule)},
   {path: "alternatives", component: AltServicesComponent}
 ];
 

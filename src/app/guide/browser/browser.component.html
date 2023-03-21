@@ -1,0 +1,132 @@
+<div class="bg-slate-600 md:mx-20 mx-5 md:py-4 md:px-8 py-2 px-4 my-2 rounded-md prose" style="max-width: fit-content;">
+    <h1 class="text-center text-lg">Browser</h1>
+
+    <p>The first thing to change is the browser you use. Foratutly, this is one of the easiest tools to migrate.
+        Virtually every browser has migration tools.</p>
+
+    <p>Nearly every browser is built on Chromium (Google Chrome, Microsoft Edge, Opera GX, etc) or Firefox. Comparing
+        the two, Firefox is better for privacy. However, it has some telemetry built in. If you want the most private
+        solution, consider a hardened version of Firefox. If you want a near identical experience to Google Chorome,
+        consider a Chromium alternative.</p>
+
+    <div class="flex flex-row flex-wrap gap-2 mt-2">
+        <div class="bg-slate-300 rounded-sm basis-0 grow p-4 text-black">
+            <h2 class="text-black text-center">Chromium</h2>
+            <img class="w-full h-16" src="/assets/img/chromium.svg" alt="">
+
+            <ul>
+                <li>Most common browser</li>
+                <li>Similar look and feel to Chrome/Edge</li>
+                <li>Easy bookmark import/export</li>
+                <li>Large extension support</li>
+            </ul>
+
+            <div class="flex justify-center">
+                <button (click)="swapBrowser('Chrome')" class="p-2 bg-slate-600 text-black rounded-sm hover:bg-slate-500">Select</button>
+            </div>
+        </div>
+
+        <div class="rounded-sm basis-0 grow p-4 text-white" style="background-color: #20123a;">
+            <h2 class="text-center text-white">Firefox</h2>
+            <img class="w-full h-16" src="/assets/img/firefox.svg" alt="">
+            <ul>
+                <li>Most private browser (if used correctly!)</li>
+                <li>Backed by Mozilla</li>
+                <li>Less resource usage</li>
+                <li>Large extension support (no manifest v3)</li>
+            </ul>
+
+            <div class="flex justify-center">
+                <button (click)="swapBrowser('Firefox')" class="p-2 bg-slate-600 text-black rounded-sm hover:bg-slate-500">Select</button>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div *ngIf="browser == 'Firefox'" #firefox>
+        <p>Firefox!</p>
+
+        <p>While the base version of Firefox is far better than Google Chrome/ Edge, it still has some flaws. For
+            example, Firefox uses the Google location services by default. Once way to fix this is to install a privacy
+            focused fork of firefox. It has all the same features, but has extra enhancements for privacy. Below are
+            some recomendations.</p>
+
+
+        <h3>Firefox</h3>
+        <p>The base version of Firefox.</p>
+        <button class="p-2 bg-slate-600 text-black rounded-sm">Install</button>
+
+        <h3>Librewolf</h3>
+        <p>A privacy focused version with a focus on anti fingerprinting.</p>
+        <button class="p-2 bg-slate-600 text-black rounded-sm">Install</button>
+
+        <h3>Waterfox</h3>
+        <p>A privacy focused version with privacy settings preset.</p>
+        <button class="p-2 bg-slate-600 text-black rounded-sm">Install</button>
+    </div>
+
+    <div *ngIf="browser == 'Chrome'" #chrome>
+        <p>Chrome</p>
+
+        <p>
+            One option is to use the Brave browser. This is a fork of Chromium with many enhancements for privacy. Brave
+            has stripped out the Google tracking from the browser. Additionally, they have created their own search
+            engine to replace Google. This was a huge undertaking and provides a valuable alternative.
+        </p>
+        <p>
+            Brave's real strength is its built in adblocker and privacy controls. It blocks nearly all ads and trackers.
+            It offers varying levels of restriction to individual websites. You can easily whitelist or blacklist
+            websites.
+        </p>    
+        <p>
+            Additionally, Brave offers the option to view privacy <em>respecting</em> ads. These are completly optional but
+            they help to support ongoing development. Brave will pay you with cryptocurrency if you turn this feature
+            on.
+        </p>
+    </div>
+
+    <hr *ngIf="browser != ''">
+    <b>
+        <em class="text-white">
+            All browsers are worthless without proper security updates! Run daily-weekly update checks for the best
+            protection. Because these browsers are the most common, they are also the most targeted by hackers.
+        </em>
+    </b>
+
+    <div *ngIf="browser != ''">
+        <h2>Extensions</h2>
+
+        <p>Regardless of the browser you pick, you will want extensions to protect your privacy. Most browsers (aside
+            from Brave) simply show you the website without any filtering. Extensions allow us to pick and choose what
+            content a website can load. This is commonly used for <b>blocking ads</b> but it can be used for much more.
+            You can block cookies, cookie notices, specific elements on a page, and prevent scripts from loading. There
+            are a few extensions that every user should have. </p>
+
+        <h3>UBlock-Origin</h3>
+
+        <p>
+            This extension is the best one for controlling incoming content. It will block ads, trackers, and other
+            annoying elements by default. You can manually "zap" elements to remove anything that may have bypassed the
+            filter.
+        </p>
+
+        <h3>Dencentraleyes</h3>
+
+        <p>
+            This extension prevents requests to non privacy respectign CDNs. Many common scripts or libraries are stored
+            on a CDN (content delivery network). If you use a file from a CDN you can be identified. Based on the
+            request, the CDN can figure out which website you are on. This extension intercepts the request and serves
+            you the file from a different source.
+        </p>
+
+        <h3>Cookie-Autodelete</h3>
+
+        <p>
+            This extension lets you control cookies. Cookies are used to store data on a user. This may be something
+            helpful (such as rembering a color theme), or it may be used to identify a user for tracking purposes. Using
+            Cookie-Autodelete you can delete all cookies when a site is closed or save a few for later. You may wish to
+            keep one cookie and remove the rest.
+        </p>
+    </div>
+</div>

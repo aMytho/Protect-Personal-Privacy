@@ -1,0 +1,7 @@
+a {
+    color: blanchedalmond !important;
+}
+
+a:hover {
+    color: bisque;
+}

@@ -1,1 +1,139 @@
-<p>info works!</p>
+<div class="bg-slate-600 md:mx-20 mx-5 md:py-4 md:px-8 py-2 px-4 my-2 rounded-md prose" style="max-width: fit-content;">
+    <h1>Browser Fingerprinting</h1>
+
+    <p>Below lists all the information that the browser has with your current security settings. If information is
+        mising or not accurate, that is a good thing! Some stats will vary based on extensions and privacy settings.</p>
+    <table class="table-auto border-collapse border border-spacing-2 border-slate-500">
+        <tr>
+            <th>Property</th>
+            <th>Value</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>timeOpened</td>
+            <td>{{info.timeOpened}}</td>
+            <td>The date and time the page was opened</td>
+        </tr>
+        <tr>
+            <td>timezone</td>
+            <td>{{info.timezone}}</td>
+            <td>The timezone offset in hours from UTC</td>
+        </tr>
+        <tr>
+            <td>pageon</td>
+            <td>{{info.pageon}}</td>
+            <td>The current page's path</td>
+        </tr>
+        <tr>
+            <td>referrer</td>
+            <td>{{info.referrer}}</td>
+            <td>The URL of the referring page</td>
+        </tr>
+        <tr>
+            <td>previousSites</td>
+            <td>{{info.previousSites}}</td>
+            <td>The number of sites in the browsing history</td>
+        </tr>
+        <tr>
+            <td>browserName</td>
+            <td>{{info.browserName}}</td>
+            <td>The name of the browser</td>
+        </tr>
+        <tr>
+            <td>browserEngine</td>
+            <td>{{info.browserEngine}}</td>
+            <td>The name of the browser's rendering engine</td>
+        </tr>
+        <tr>
+            <td>browserVersion1a</td>
+            <td>{{info.browserVersion1a}}</td>
+            <td>The version of the browser</td>
+        </tr>
+        <tr>
+            <td>browserVersion1b</td>
+            <td>{{info.browserVersion1b}}</td>
+            <td>The user agent string of the browser</td>
+        </tr>
+        <tr>
+            <td>browserLanguage</td>
+            <td>{{info.browserLanguage}}</td>
+            <td>The language of the browser</td>
+        </tr>
+        <tr>
+            <td>browserOnline</td>
+            <td>{{info.browserOnline}}</td>
+            <td>Whether the browser is currently online</td>
+        </tr>
+        <tr>
+            <td>browserPlatform</td>
+            <td>{{info.browserPlatform}}</td>
+            <td>The platform on which the browser is running</td>
+        </tr>
+        <tr>
+            <td>javaEnabled</td>
+            <td>{{info.javaEnabled}}</td>
+            <td>Whether Java is enabled in the browser</td>
+        </tr>
+        <tr>
+            <td>dataCookiesEnabled</td>
+            <td>{{info.dataCookiesEnabled}}</td>
+            <td>Whether cookies are enabled in the browser</td>
+        </tr>
+        <tr>
+            <td>dataCookies1</td>
+            <td>{{info.dataCookies1}}</td>
+            <td>The contents of the cookies</td>
+        </tr>
+        <tr>
+            <td>dataCookies2</td>
+            <td>{{info.dataCookies2}}</td>
+            <td>The decoded contents of the cookies</td>
+        </tr>
+        <tr>
+            <td>dataStorage</td>
+            <td>{{info.dataStorage}}</td>
+            <td>The contents of the local storage</td>
+        </tr>
+        <tr>
+            <td>sizeScreenW</td>
+            <td>{{info.sizeScreenW}}</td>
+            <td>The width of the screen in pixels</td>
+        </tr>
+        <tr>
+            <td>sizeScreenH</td>
+            <td>{{info.sizeScreenH}}</td>
+            <td>The height of the screen in pixels</td>
+        </tr>
+        <tr>
+            <td>sizeInW</td>
+            <td>{{info.sizeInW}}</td>
+            <td>The width of the browser window in pixels</td>
+        </tr>
+        <tr>
+            <td>sizeInH</td>
+            <td>{{info.sizeInH}}</td>
+            <td>The height of the browser window in pixels</td>
+        </tr>
+        <tr>
+            <td>sizeAvailW</td>
+            <td>{{info.sizeAvailW}}</td>
+            <td>The available width of the screen in pixels</td>
+        </tr>
+        <tr>
+            <td>sizeAvailH</td>
+            <td>{{info.sizeAvailH}}</td>
+            <td>The available height of the screen in pixels</td>
+        </tr>
+        <tr>
+            <td>scrColorDepth</td>
+            <td>{{info.scrColorDepth}}</td>
+            <td>The bit depth of the color palette for displaying images on the screen</td>
+        </tr>
+        <tr>
+            <td>scrPixelDepth</td>
+            <td>{{info.scrPixelDepth}}</td>
+            <td>The bit depth of the screen</td>
+        </tr>
+    </table>
+
+</div>

@@ -1,7 +1,8 @@
-a {
+ul>li>p {
     color: blanchedalmond !important;
+    cursor: pointer;
 }
 
-a:hover {
+ul>li>p:hover {
     color: bisque;
 }

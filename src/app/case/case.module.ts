@@ -5,16 +5,18 @@ import { CaseRoutingModule } from './case-routing.module';
 import { GeneralComponent } from './general/general.component';
 import { CaseSideBarComponent } from './case-side-bar/case-side-bar.component';
 import { MarkdownModule } from 'ngx-markdown';
+import { GlobalaccessModule } from '../globalaccess/globalaccess.module';
 
 
 @NgModule({
   declarations: [
     GeneralComponent,
-    CaseSideBarComponent
+    CaseSideBarComponent,
   ],
   imports: [
     CommonModule,
     CaseRoutingModule,
+    GlobalaccessModule,
     MarkdownModule.forChild()
   ]
 })

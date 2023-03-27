@@ -5,12 +5,14 @@
 
     <!-- General aritcle or current article -->
     <div class="col-span-2 p-10 h-screen overflow-y-auto ml-5 mx-5 md:py-4 md:px-8 py-2 px-4 my-2  rounded-md prose prose-a:text-white prose-li:text-white prose-h1:text-white
-    prose-h2:text-white prose-h3:text-white prose-h4:text-white">
+    prose-h2:text-white prose-h3:text-white prose-h4:text-white" style="max-width: max-content;">
         <div *ngIf="articleSelected == false">
             <h1>Cases</h1>
             
             <p>This page shows a listing of various security breaches and privacy issues.</p>
-            <p>These listings are here to show that our information has always been at risk, and will always be at risk.</p>
+            <p>These listings are here to show that our information has always been at risk, and will always be at risk. While every business claims to have great security in place, many are not able to protect users data. This is due to two factors.</p>
+            <p>The first is the lack of proper safeguards. This can include many mistakes such as poor or no encryption, improper coding, internal attacks (employee theft), etc. Some of these issues are very common and can easily be prevented if the company puts in the work. However, few companies do so.</p>
+            <p>The second is due to the fundamental flaw of security. Time is <b>always</b> on the side of the attacker. No matter how much security you have, someone will eventually "get in." What is the solution to this problem? Don't give them any information to steal! The fewer services that have your information, the fewer attack oppurnities exist for hackers.</p>
         </div>
         <div *ngIf="articleSelected == true" class="w-full">
             <app-md #article [post]="id"></app-md>

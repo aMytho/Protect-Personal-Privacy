@@ -9,7 +9,7 @@ export class MdComponent {
   /**
    * Number representing the current post
    */
-  @Input() post: number = 0;
+  @Input() public post: number = 0;
 
   /**
    * Link to the active post.
@@ -21,6 +21,7 @@ export class MdComponent {
    * @param id The post to access
    */
   getPost(id: number) {
+    console.log(true)
     switch(id) {
       case -1: this.src = '/assets/posts/alternativeServives.md'; break;
       case 1: this.src = '/assets/posts/demo copy.md'; break;

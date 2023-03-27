@@ -1,15 +1,19 @@
-
-<app-case-side-bar (id)="updateArticle($event)" class="w-1/8"></app-case-side-bar>
-<div class="flex flex-row w-full">
-    <div class="flex-grow float-right" *ngIf="articleSelected == false">
-        
-        <h2>Cases</h2>
-        
-        <p>This page shows a listing of various security breaches and privacy issues.</p>
-        <p>These listings are here to show that our information has always been at risk, and will always be at risk.</p>
-    </div>
-    <div class="flex-grow float-right" *ngIf="articleSelected == true">
-        <app-md #article [post]="id"></app-md>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-x-4">
+    <div class="col-span-1 ml-12 mt-4">
+        <app-case-side-bar (id)="updateArticle($event)"></app-case-side-bar>
     </div>
 
+    <!-- General aritcle or current article -->
+    <div class="col-span-2 p-10 h-screen overflow-y-auto ml-5 mx-5 md:py-4 md:px-8 py-2 px-4 my-2  rounded-md prose prose-a:text-white prose-li:text-white prose-h1:text-white
+    prose-h2:text-white prose-h3:text-white prose-h4:text-white">
+        <div *ngIf="articleSelected == false">
+            <h1>Cases</h1>
+            
+            <p>This page shows a listing of various security breaches and privacy issues.</p>
+            <p>These listings are here to show that our information has always been at risk, and will always be at risk.</p>
+        </div>
+        <div *ngIf="articleSelected == true" class="w-full">
+            <app-md #article [post]="id"></app-md>
+        </div>
+    </div>
 </div>

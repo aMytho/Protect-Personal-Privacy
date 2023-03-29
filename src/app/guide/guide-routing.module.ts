@@ -3,10 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserComponent } from './browser/browser.component';
 import { CommunicationComponent } from './communication/communication.component';
 import { GuideComponent } from './guide.component';
+import { WifiComponent } from './wifi/wifi.component';
 
 const routes: Routes = [
   {path: "browser", component: BrowserComponent},
   {path: "communication", component: CommunicationComponent},
+  {path: "wifi", component: WifiComponent},
   {path: "", component: GuideComponent}
 ];
 

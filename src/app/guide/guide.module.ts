@@ -5,13 +5,15 @@ import { GuideRoutingModule } from './guide-routing.module';
 import { GuideComponent } from './guide.component';
 import { BrowserComponent } from './browser/browser.component';
 import { CommunicationComponent } from './communication/communication.component';
+import { WifiComponent } from './wifi/wifi.component';
 
 
 @NgModule({
   declarations: [
     GuideComponent,
     BrowserComponent,
-    CommunicationComponent
+    CommunicationComponent,
+    WifiComponent
   ],
   imports: [
     CommonModule,

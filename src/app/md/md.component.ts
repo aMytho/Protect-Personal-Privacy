@@ -25,6 +25,10 @@ export class MdComponent {
     switch(id) {
       case -1: this.src = '/assets/posts/alternativeServives.md'; break;
       case 1: this.src = '/assets/posts/demo copy.md'; break;
+      case 2: this.src = '/assets/posts/cases/privacyVsSecurity.md'; break;
+      case 3: this.src = '/assets/posts/cases/breaches/reddit.md'; break;
+      case 4: this.src = '/assets/posts/cases/breaches/openAI.md'; break;
+      case 5: this.src = '/assets/posts/cases/free.md'; break;
     }
   }
 

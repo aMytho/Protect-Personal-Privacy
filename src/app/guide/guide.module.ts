@@ -6,6 +6,7 @@ import { GuideComponent } from './guide.component';
 import { BrowserComponent } from './browser/browser.component';
 import { CommunicationComponent } from './communication/communication.component';
 import { WifiComponent } from './wifi/wifi.component';
+import { SimpleComponent } from './simple/simple.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { WifiComponent } from './wifi/wifi.component';
     GuideComponent,
     BrowserComponent,
     CommunicationComponent,
-    WifiComponent
+    WifiComponent,
+    SimpleComponent
   ],
   imports: [
     CommonModule,

@@ -29,6 +29,7 @@ export class MdComponent {
       case 3: this.src = '/assets/posts/cases/breaches/reddit.md'; break;
       case 4: this.src = '/assets/posts/cases/breaches/openAI.md'; break;
       case 5: this.src = '/assets/posts/cases/free.md'; break;
+      case 6: this.src = '/assets/posts/cases/simple.md'; break;
     }
   }
 

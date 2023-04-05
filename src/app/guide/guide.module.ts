@@ -7,6 +7,7 @@ import { BrowserComponent } from './browser/browser.component';
 import { CommunicationComponent } from './communication/communication.component';
 import { WifiComponent } from './wifi/wifi.component';
 import { SimpleComponent } from './simple/simple.component';
+import { PasswordComponent } from './password/password.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SimpleComponent } from './simple/simple.component';
     BrowserComponent,
     CommunicationComponent,
     WifiComponent,
-    SimpleComponent
+    SimpleComponent,
+    PasswordComponent
   ],
   imports: [
     CommonModule,

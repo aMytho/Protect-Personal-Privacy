@@ -5,12 +5,14 @@ import { CommunicationComponent } from './communication/communication.component'
 import { GuideComponent } from './guide.component';
 import { WifiComponent } from './wifi/wifi.component';
 import { SimpleComponent } from './simple/simple.component';
+import { PasswordComponent } from './password/password.component';
 
 const routes: Routes = [
   {path: "browser", component: BrowserComponent},
   {path: "communication", component: CommunicationComponent},
   {path: "wifi", component: WifiComponent},
   {path: "simple", component: SimpleComponent},
+  {path: "password", component: PasswordComponent},
   {path: "", component: GuideComponent}
 ];
 

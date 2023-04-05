@@ -33,6 +33,14 @@ markdown a:hover {
     color: bisque;
 }
 
+.colorLinks a {
+    color: blanchedalmond;
+}
+
+.colorLinks a:hover {
+    color: bisque;
+}
+
 .guide h1,
 .guide h2,
 .guide h3,

@@ -21,4 +21,8 @@ export class BrowserComponent {
       this.firefox.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
+
+  openLink(link: string) {
+    window.open("https://" + link);
+  }
 }

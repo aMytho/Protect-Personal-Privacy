@@ -12,4 +12,8 @@ export class CommunicationComponent {
   public swapCommunication(choice: userCommunication) {
     this.communication = choice;
   }
+
+  openLink(link: string) {
+    window.open("https://" + link);
+  }
 }

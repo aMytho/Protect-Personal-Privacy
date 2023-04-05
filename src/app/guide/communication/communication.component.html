@@ -1,4 +1,4 @@
-<div class="bg-slate-600 md:mx-20 mx-5 md:py-4 md:px-8 py-2 px-4 my-2 rounded-md prose" style="max-width: fit-content;">
+<div class="bg-slate-600 md:mx-20 mx-5 md:py-4 md:px-8 py-2 px-4 my-2 rounded-md prose guide" style="max-width: fit-content;">
     <h1 class="text-center text-lg">Communication</h1>
 
     <p>Our communication is one of the most important things to protect. Our communication is a window into how we think and feel. Companies know this and try to access it using many different means. There is a reason why services like email are free, and it is <b>not</b> generosity!
@@ -10,7 +10,7 @@
 
     <div class="flex flex-row flex-wrap gap-2 mt-2">
         <div class="bg-slate-300 rounded-sm basis-0 grow p-4 text-black">
-            <h2 class="text-black text-center">SMS (Text Messaging)</h2>
+            <h2 class="!text-black text-center">SMS (Text Messaging)</h2>
             <img class="w-full h-16" src="/assets/img/sms.svg" alt="">
 
             <ul>
@@ -55,13 +55,15 @@
         </p>
     
         <h3 id="signal">Signal</h3>
-    
-        <p>One option to escape these issues is to use signal. It is an encrypted messaging platform with a high focus on security and encryption. It is free and is a far better option. Similarly to SMS, you can send messages and particapte in group chats. However, you are dependent on the company. Signal works anywhere you have a data connection or WiFi</p>
-    </div>
 
+        <p>One option to escape these issues is to use signal. It is an encrypted messaging platform with a high focus on security and encryption. It is free and is a far better option. Similarly to SMS, you can send messages and particapte in group chats. However, you are dependent on the company. Signal works anywhere you have a data connection or WiFi.</p>
+
+        <button class="p-2 bg-slate-800 text-white rounded-sm" (click)="openLink('www.signal.org/download/')">Install</button>
+    </div>
+    
     <div *ngIf="communication == 'email'">
         <h2 id="email">Email</h2>
-    
+        
         <p>
             Email is another privacy target. Since email is (usually) a free service, it suffers from the most surveilance. Gmail,
             Outlook, Yahoo, and nearly every other provider sell the content of your emails. Nothing you send in an email is private. Email is also a target for government surveilance efforts. Many services require email verification not for security, but for identification purposes.
@@ -72,15 +74,17 @@
         </p>
     
         <h3 id="proton-mail-self-hosted-mail">Proton Mail / Self Hosted</h3>
-    
+        
         <p>
             Proton mail is a great email service. They have some of the strongest encryption services. While there is a free tier, many users will need to pay for a premium tier to get the intended service. Unlike Gmail, Proton Mail does not store your encryption keys. This means that even if the government requests your information, your email content is safe. This also protects you from ads and other information gathering.
         </p>
 
         <p>Similarly to other services, ProtonMail also offers file storage, calender functionality, and a VPN.</p>
-
+        
+        <button class="p-2 bg-slate-800 text-white rounded-sm" (click)="openLink('proton.me/')">Install</button>
+        
         <h3>Self Hosted Mail <em>(Advanced)</em></h3>
-
+        
         <p>
             Another option is to hose your own mail server. This proved the best guarentee of control. No unauthorized user can read your email and you don't need to pay a monthly fee for the service (aside from running your server). However, this is much more advanced. Several projects exist to help with this project. One of the easiest ones is the Docker Mail. This runs a Docker instance and is mostly a run and forget solution.
         </p>

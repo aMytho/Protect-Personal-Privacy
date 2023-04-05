@@ -32,3 +32,13 @@ markdown a {
 markdown a:hover {
     color: bisque;
 }
+
+.guide h1,
+.guide h2,
+.guide h3,
+.guide h4,
+.guide h5,
+.guide h6
+{
+    color: aliceblue
+}

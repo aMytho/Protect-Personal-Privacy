@@ -1,4 +1,4 @@
-<div class="bg-slate-600 md:mx-20 mx-5 md:py-4 md:px-8 py-2 px-4 my-2 rounded-md prose guide" style="max-width: fit-content;">
+<div class="bg-lapis md:mx-20 mx-5 md:py-4 md:px-8 py-2 px-4 my-2 rounded-md prose guide" style="max-width: fit-content;">
     <h1 class="text-center text-lg">Communication</h1>
 
     <p>Our communication is one of the most important things to protect. Our communication is a window into how we think and feel. Companies know this and try to access it using many different means. There is a reason why services like email are free, and it is <b>not</b> generosity!
@@ -9,8 +9,8 @@
     </p>
 
     <div class="flex flex-row flex-wrap gap-2 mt-2">
-        <div class="bg-slate-300 rounded-sm basis-0 grow p-4 text-black">
-            <h2 class="!text-black text-center">SMS (Text Messaging)</h2>
+        <div class="bg-lighterBlue rounded-sm basis-0 grow p-4 text-white">
+            <h2 class="!text-white text-center">SMS (Text Messaging)</h2>
             <img class="w-full h-16" src="/assets/img/sms.svg" alt="">
 
             <ul>
@@ -22,11 +22,11 @@
             </ul>
 
             <div class="flex justify-center">
-                <button (click)="swapCommunication('SMS')" class="p-2 bg-slate-600 text-black rounded-sm hover:bg-slate-500">Select</button>
+                <button (click)="swapCommunication('SMS')" class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm hover:bg-slate-500">Select</button>
             </div>
         </div>
 
-        <div class="rounded-sm basis-0 grow p-4 text-white" style="background-color: #20123a;">
+        <div class=" bg-lighterBlue rounded-sm basis-0 grow p-4 text-white">
             <h2 class="text-center text-white">Email</h2>
             <img class="w-full h-16" src="/assets/img/email.svg" alt="">
             <ul>
@@ -36,7 +36,7 @@
             </ul>
 
             <div class="flex justify-center">
-                <button (click)="swapCommunication('email')" class="p-2 bg-slate-600 text-black rounded-sm hover:bg-slate-500">Select</button>
+                <button (click)="swapCommunication('email')" class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm hover:bg-slate-500">Select</button>
             </div>
         </div>
     </div>
@@ -58,7 +58,7 @@
 
         <p>One option to escape these issues is to use signal. It is an encrypted messaging platform with a high focus on security and encryption. It is free and is a far better option. Similarly to SMS, you can send messages and particapte in group chats. However, you are dependent on the company. Signal works anywhere you have a data connection or WiFi.</p>
 
-        <button class="p-2 bg-slate-800 text-white rounded-sm" (click)="openLink('www.signal.org/download/')">Install</button>
+        <button class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm" (click)="openLink('www.signal.org/download/')">Install</button>
     </div>
     
     <div *ngIf="communication == 'email'">
@@ -81,7 +81,7 @@
 
         <p>Similarly to other services, ProtonMail also offers file storage, calender functionality, and a VPN.</p>
         
-        <button class="p-2 bg-slate-800 text-white rounded-sm" (click)="openLink('proton.me/')">Install</button>
+        <button class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm" (click)="openLink('proton.me/')">Install</button>
         
         <h3>Self Hosted Mail <em>(Advanced)</em></h3>
         

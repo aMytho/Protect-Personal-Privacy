@@ -1,4 +1,4 @@
-<div class="bg-slate-600 md:mx-20 mx-5 md:py-4 md:px-8 py-2 px-4 my-2 rounded-md prose guide" style="max-width: fit-content;">
+<div class="bg-lapis md:mx-20 mx-5 md:py-4 md:px-8 py-2 px-4 my-2 rounded-md prose guide" style="max-width: fit-content;">
     <h1 class="text-center text-lg">Browser</h1>
 
     <p>The first thing to change is the browser you use. Foratutly, this is one of the easiest tools to migrate.
@@ -22,7 +22,7 @@
             </ul>
 
             <div class="flex justify-center">
-                <button (click)="swapBrowser('Chrome')" class="p-2 bg-slate-600 text-black rounded-sm hover:bg-slate-500">Select</button>
+                <button (click)="swapBrowser('Chrome')" class="px-2 py-1 text-white rounded-md hover:bg-slate-500" style="background-color: #80b0dd;">Select</button>
             </div>
         </div>
 
@@ -37,7 +37,7 @@
             </ul>
 
             <div class="flex justify-center">
-                <button (click)="swapBrowser('Firefox')" class="p-2 bg-slate-600 text-black rounded-sm hover:bg-slate-500">Select</button>
+                <button (click)="swapBrowser('Firefox')" class="px-2 py-1 bg-slate-600 text-white rounded-md hover:bg-slate-500" style="background-color: #665deb;">Select</button>
             </div>
         </div>
     </div>
@@ -55,15 +55,15 @@
 
         <h3>Firefox</h3>
         <p>The base version of Firefox. Decent for privacy, but could be improved with the below options.</p>
-        <button class="p-2 bg-slate-800 text-white rounded-sm" (click)="openLink('www.mozilla.org/en-US/firefox/new/')">Install</button>
+        <button class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm" (click)="openLink('www.mozilla.org/en-US/firefox/new/')">Install</button>
 
         <h3>Librewolf</h3>
         <p>A privacy focused version with a focus on anti-fingerprinting.</p>
-        <button class="p-2 bg-slate-800 text-white rounded-sm" (click)="openLink('librewolf.net/')">Install</button>
+        <button class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm" (click)="openLink('librewolf.net/')">Install</button>
 
         <h3>Waterfox</h3>
         <p>A privacy focused version with privacy settings preset.</p>
-        <button class="p-2 bg-slate-800 text-white rounded-sm" (click)="openLink('www.waterfox.net/')">Install</button>
+        <button class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm" (click)="openLink('www.waterfox.net/')">Install</button>
     </div>
 
     <div *ngIf="browser == 'Chrome'" #chrome>
@@ -85,7 +85,7 @@
             on.
         </p>
 
-        <button class="p-2 bg-slate-800 text-white rounded-sm" (click)="openLink('brave.com/')">Install</button>
+        <button class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm" (click)="openLink('brave.com/')">Install</button>
     </div>
 
     <hr *ngIf="browser != ''">
@@ -113,8 +113,8 @@
             filter.
         </p>
 
-        <button class="p-2 bg-slate-800 text-white rounded-sm" (click)="openLink('chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm')">Chromium Version</button>
-        <button class="p-2 bg-slate-800 text-white rounded-sm mx-2" (click)="openLink('addons.mozilla.org/en-US/firefox/addon/ublock-origin/')">Firefox Version</button>
+        <button class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm" (click)="openLink('chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm')">Chromium Version</button>
+        <button class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm mx-2" (click)="openLink('addons.mozilla.org/en-US/firefox/addon/ublock-origin/')">Firefox Version</button>
 
         <h3>Dencentraleyes</h3>
 
@@ -125,8 +125,8 @@
             you the file from a different source.
         </p>
 
-        <button class="p-2 bg-slate-800 text-white rounded-sm mx-2" (click)="openLink('chrome.google.com/webstore/detail/decentraleyes/ldpochfccmkkmhdbclfhpagapcfdljkj')">Chromium Version</button>
-        <button class="p-2 bg-slate-800 text-white rounded-sm" (click)="openLink('addons.mozilla.org/en-US/firefox/addon/decentraleyes/')">Firefox Version</button>
+        <button class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm mx-2" (click)="openLink('chrome.google.com/webstore/detail/decentraleyes/ldpochfccmkkmhdbclfhpagapcfdljkj')">Chromium Version</button>
+        <button class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm" (click)="openLink('addons.mozilla.org/en-US/firefox/addon/decentraleyes/')">Firefox Version</button>
 
         <h3>Cookie-Autodelete</h3>
 
@@ -137,8 +137,7 @@
             keep one cookie and remove the rest.
         </p>
 
-        <button class="p-2 bg-slate-800 text-white rounded-sm" (click)="openLink('chrome.google.com/webstore/detail/cookie-autodelete/fhcgjolkccmbidfldomjliifgaodjagh')">Chromium Version</button>
-        <button class="p-2 bg-slate-800 text-white rounded-sm mx-2" (click)="openLink('addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/')">Firefox Version</button>
-        
+        <button class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm" (click)="openLink('chrome.google.com/webstore/detail/cookie-autodelete/fhcgjolkccmbidfldomjliifgaodjagh')">Chromium Version</button>
+        <button class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm mx-2" (click)="openLink('addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/')">Firefox Version</button>
     </div>
 </div>

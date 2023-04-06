@@ -6,3 +6,7 @@ ul>li>p {
 ul>li>p:hover {
     color: bisque;
 }
+
+#category {
+    background-color: #3e94c23b;
+}

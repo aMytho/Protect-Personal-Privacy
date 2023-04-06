@@ -1,38 +1,65 @@
 <div class="bg-lapis md:mx-20 mx-5 md:py-4 md:px-8 py-2 px-4 my-2 rounded-md prose" style="max-width: fit-content;">
-    <h1>Browser Fingerprinting</h1>
+    <h1 class="text-white">Browser Fingerprinting</h1>
 
     <p>Below lists all the information that the browser has with your current security settings. If information is
-        mising or not accurate, that is a good thing! Some stats will vary based on extensions and privacy settings.</p>
-    <table class="table-auto border-collapse border border-spacing-2 border-slate-500">
+        mising or not accurate, that is a good thing! Some stats will vary based on extensions and privacy settings.
+    </p>
+
+    <h2 class="text-white">Displays</h2>
+    <table class="table-fixed border-collapse border border-solid border-spacing-2 border-pictonBlue text-white">
         <tr>
             <th>Property</th>
             <th>Value</th>
             <th>Description</th>
         </tr>
         <tr>
-            <td>timeOpened</td>
-            <td>{{info.timeOpened}}</td>
-            <td>The date and time the page was opened</td>
+            <td>sizeScreenW</td>
+            <td>{{info.sizeScreenW}}</td>
+            <td>The width of the screen in pixels</td>
         </tr>
         <tr>
-            <td>timezone</td>
-            <td>{{info.timezone}}</td>
-            <td>The timezone offset in hours from UTC</td>
+            <td>sizeScreenH</td>
+            <td>{{info.sizeScreenH}}</td>
+            <td>The height of the screen in pixels</td>
         </tr>
         <tr>
-            <td>pageon</td>
-            <td>{{info.pageon}}</td>
-            <td>The current page's path</td>
+            <td>sizeInW</td>
+            <td>{{info.sizeInW}}</td>
+            <td>The width of the browser window in pixels</td>
         </tr>
         <tr>
-            <td>referrer</td>
-            <td>{{info.referrer}}</td>
-            <td>The URL of the referring page</td>
+            <td>sizeInH</td>
+            <td>{{info.sizeInH}}</td>
+            <td>The height of the browser window in pixels</td>
         </tr>
         <tr>
-            <td>previousSites</td>
-            <td>{{info.previousSites}}</td>
-            <td>The number of sites in the browsing history</td>
+            <td>sizeAvailW</td>
+            <td>{{info.sizeAvailW}}</td>
+            <td>The available width of the screen in pixels</td>
+        </tr>
+        <tr>
+            <td>sizeAvailH</td>
+            <td>{{info.sizeAvailH}}</td>
+            <td>The available height of the screen in pixels</td>
+        </tr>
+        <tr>
+            <td>scrColorDepth</td>
+            <td>{{info.scrColorDepth}}</td>
+            <td>The bit depth of the color palette for displaying images on the screen</td>
+        </tr>
+        <tr>
+            <td>scrPixelDepth</td>
+            <td>{{info.scrPixelDepth}}</td>
+            <td>The bit depth of the screen</td>
+        </tr>
+    </table>
+
+    <h2 class="text-white">Browser Info</h2>
+    <table class="table-fixed border-collapse border border-solid border-spacing-2 border-pictonBlue text-white">
+        <tr>
+            <th>Property</th>
+            <th>Value</th>
+            <th>Description</th>
         </tr>
         <tr>
             <td>browserName</td>
@@ -94,46 +121,39 @@
             <td>{{info.dataStorage}}</td>
             <td>The contents of the local storage</td>
         </tr>
-        <tr>
-            <td>sizeScreenW</td>
-            <td>{{info.sizeScreenW}}</td>
-            <td>The width of the screen in pixels</td>
-        </tr>
-        <tr>
-            <td>sizeScreenH</td>
-            <td>{{info.sizeScreenH}}</td>
-            <td>The height of the screen in pixels</td>
-        </tr>
-        <tr>
-            <td>sizeInW</td>
-            <td>{{info.sizeInW}}</td>
-            <td>The width of the browser window in pixels</td>
-        </tr>
-        <tr>
-            <td>sizeInH</td>
-            <td>{{info.sizeInH}}</td>
-            <td>The height of the browser window in pixels</td>
-        </tr>
-        <tr>
-            <td>sizeAvailW</td>
-            <td>{{info.sizeAvailW}}</td>
-            <td>The available width of the screen in pixels</td>
-        </tr>
-        <tr>
-            <td>sizeAvailH</td>
-            <td>{{info.sizeAvailH}}</td>
-            <td>The available height of the screen in pixels</td>
-        </tr>
-        <tr>
-            <td>scrColorDepth</td>
-            <td>{{info.scrColorDepth}}</td>
-            <td>The bit depth of the color palette for displaying images on the screen</td>
-        </tr>
-        <tr>
-            <td>scrPixelDepth</td>
-            <td>{{info.scrPixelDepth}}</td>
-            <td>The bit depth of the screen</td>
-        </tr>
     </table>
 
+    <h2 class="text-white">General</h2>
+    <table class="table-fixed border-collapse border border-solid border-spacing-2 border-pictonBlue text-white">
+        <tr>
+            <th>Property</th>
+            <th>Value</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>timeOpened</td>
+            <td>{{info.timeOpened}}</td>
+            <td>The date and time the page was opened</td>
+        </tr>
+        <tr>
+            <td>timezone</td>
+            <td>{{info.timezone}}</td>
+            <td>The timezone offset in hours from UTC</td>
+        </tr>
+        <tr>
+            <td>pageon</td>
+            <td>{{info.pageon}}</td>
+            <td>The current page's path</td>
+        </tr>
+        <tr>
+            <td>referrer</td>
+            <td>{{info.referrer}}</td>
+            <td>The URL of the referring page</td>
+        </tr>
+        <tr>
+            <td>previousSites</td>
+            <td>{{info.previousSites}}</td>
+            <td>The number of sites in the browsing history</td>
+        </tr>
+    </table>
 </div>

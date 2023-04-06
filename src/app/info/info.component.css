@@ -1,5 +1,9 @@
 table td {
     color: white;
-    border: solid slategray 2px;
+    border: solid #4EA5D9 2px;
     padding: .5rem;
+}
+
+table th {
+    background-color: #3180ab;
 }

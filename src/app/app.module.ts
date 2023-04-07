@@ -7,6 +7,7 @@ import { NavComponent } from './nav/nav.component';
 import { InfoComponent } from './info/info.component';
 import { AltServicesComponent } from './info/alt-services/alt-services.component';
 import { GlobalaccessModule } from './globalaccess/globalaccess.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { GlobalaccessModule } from './globalaccess/globalaccess.module';
     NavComponent,
     InfoComponent,
     AltServicesComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 # Reddit Breach
 
-The social media platform Reddit received a data breach in early Febuary of 2023. A hacker was able to access the source code and some internal systems of Reddit. Additionally, they were able to get access to limited employee information. While the user data is safe, the unintended release of the source code will make it easier for attackers to gain access to user data in the future.
+The social media platform Reddit received a data breach in early February of 2023. A hacker was able to access the source code and some internal systems of Reddit. Additionally, they were able to get access to limited employee information. While the user data is safe, the unintended release of the source code will make it easier for attackers to gain access to user data in the future.
 
 ## What Happened
 

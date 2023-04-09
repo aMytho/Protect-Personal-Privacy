@@ -12,9 +12,7 @@ export class GeneralComponent {
   public id: number = 0;
 
   public updateArticle(id: number) {
-    if (this.articleSelected == false) {
-      this.articleSelected = true;
-      this.id = id;
-    }
+    this.articleSelected = true;
+    this.id = id;
   }
 }

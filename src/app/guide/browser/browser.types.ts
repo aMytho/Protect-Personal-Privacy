@@ -1,1 +1,1 @@
-export type browserSelection = "Chrome" | "Firefox" | "";
+export type browserSelection = "Chrome" | "Firefox" | "none";

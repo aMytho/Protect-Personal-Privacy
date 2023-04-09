@@ -10,3 +10,7 @@ ul>li>p:hover {
 #category {
     background-color: #3e94c23b;
 }
+
+#category div:hover {
+    background-color: #1c82b93b;
+}

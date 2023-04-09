@@ -7,7 +7,7 @@ import { Component} from '@angular/core';
 export class AltServicesComponent {
   public scrollTo(element: string) {
     // Technically this is the non angular way, but it works :)
-    let target = document.getElementById(element)!;
+    let target = document.getElementById(element + "-")!;
     window.scroll({
       top: target.getBoundingClientRect().top + window.scrollY,
       behavior: 'smooth',

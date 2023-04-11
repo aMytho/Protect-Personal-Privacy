@@ -1,0 +1,73 @@
+<div class="bg-lapis md:mx-20 mx-5 md:py-4 md:px-8 py-2 px-4 my-2 rounded-md prose guide" style="max-width: fit-content;">
+
+    <h1>
+        Two Factor Authentication (2FA)
+    </h1>
+    
+    <p>
+        Using 2FA is a great way to improve the security of you account and is being required for some services. There are several methods to implement 2FA. This guide will go over them and show a common authentication mistake.
+    </p>
+    
+    <h2>
+        What is 2FA?
+    </h2>
+    
+    <p>
+        2FA is using a secondary method of authentication to login to a service or resource. The two most common methods are SMS codes and app codes. When you log into a service, you will first be prompted for your password. Next, you will need to use your secondary method of authentication. This may be in the form of a six-digit code sent via SMS or using an app to login. This is an improvement to normal login procedures because an attacker will need both your password and your second authentication method.
+    </p>
+    
+    <p>
+        While 2FA is a major security improvement, it may harm your privacy! Using a popular app such as Google Authenticator may allow them to see when you used the app, and which services you use. While it is very unlikely that they would login as you, it defeats the purpose of a private sign in.
+    </p>
+    
+    <h2>
+        SMS (Text-Messaging) Codes
+    </h2>
+    
+    <p>
+        This is a very common method of authentication. When you log in, you will be prompted to check your phone for a text message. A few seconds later you will be sent a code to login with. This is a very simple method of authentication, but it is better than normal authentication. SMS authentication is vulnerable to several forms of attacks. Because of these issues, it is not the recommended method. Additionally, you may not wish for a service to obtain your phone number.
+    </p>
+
+    <p>
+        Any form of authentication involving a phone call has the same benefits and vulnerabilities as SMS.
+    </p>
+    
+    <h2>
+        Authenticator Apps
+    </h2>
+    
+    <p>
+        Authenticator apps are a far better option than SMS authentication. Many services allow you to download one of these apps (or a custom app for their service) and use it to login. Since every app is slightly different, it is not vulnerable to the same attacks as SMS. Most apps store your credentials on the phone or in the cloud. They are always encrypted. This is very important if someone were to steal your phone!
+    </p>
+    
+    <p>
+        There are several generic apps available. The most common ones are <a href="https://support.google.com/accounts/answer/1066447?hl=en&co=GENIE.Platform%3DiOS">Google Authenticator</a>, <a href="https://support.microsoft.com/en-us/account-billing/download-and-install-the-microsoft-authenticator-app-351498fc-850a-45da-b7b6-27e523b8702a">Microsoft Authenticator</a>, and <a href="https://authy.com/download/">Authy</a>. Since this guide focuses on private options, this leaves Authy as the mainstream option. If your service has support for one of these apps, it likely supports the other two. However, this authentication process is just a protocol. This means that <em>any</em> app can implement it easily. I personally use <a href="https://getaegis.app/">Aegis</a> which is an open source option that has all the same features. Although services say it is not supported, it usually is!
+    </p>
+
+    <img src="/assets/img/aegis.png" class="h-1/6" alt="Aegis authenticator app">
+    <p class="text-xs">Image of Aegis Authenticator</p>
+
+    <p>
+        The main thing to consider when choosing a 2FA app is if you want cloud or local backups. Cloud backups guarantee that you can always access your app codes even if you lose your phone. However, it opens up the possibility that someone could hack your account and gain access to <em><b>all</b></em> of your services! If you choose a local backup, make sure to store it off of your main device. 
+    </p>
+    
+    <h2>
+        Biometric Security
+    </h2>
+    
+    <p>
+        Many people think that Biometric authentication is a good option. However, this is usually not the case. While it has some applications for protecting physical locations (retinal scanner at door), it is not a good option for personal security. Using a thumbprint or facial scan, you can gain access to various services. Unlike a password, this can not be broken by brute force. However, it has a lot of problems.
+    </p>
+
+    <p>
+        The first is that biometrics cannot be changed. If someone gains access to your fingerprint, they will <em>always</em> have access to it. Unlike a password which can be changed if discovered, you cannot change your DNA! Facial technology has the same problem. Some cheap scanners can be fooled by a high quality photo. While this is becoming less common, you should avoid these options.
+    </p>
+
+    <p>
+        The second is the right to privacy. In some states, biometrics are not protected. If you were to get pulled over by law enforcement they cannot (usually) force you to unlock your phone. However, facial scans and thumbprints are not under that same protection. This is still being debated and will likely change in the future. If someone were to physically attack you, they can force you to look at your phone or grab your thumb to unlock it. If you have a long password, they have to get you to reveal it.
+    </p>
+
+    <p>
+        The last issue deals with privacy. If you use your face to login to a service, it follows that that service can see what you look like. If you don't allow yourself to be seen, you should not have to reveal that information.
+    </p>
+</div>

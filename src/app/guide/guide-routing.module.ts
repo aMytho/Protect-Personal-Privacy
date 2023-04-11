@@ -6,6 +6,7 @@ import { GuideComponent } from './guide.component';
 import { WifiComponent } from './wifi/wifi.component';
 import { SimpleComponent } from './simple/simple.component';
 import { PasswordComponent } from './password/password.component';
+import { ToofaComponent } from './toofa/toofa.component';
 
 const routes: Routes = [
   {path: "browser", component: BrowserComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: "wifi", component: WifiComponent},
   {path: "simple", component: SimpleComponent},
   {path: "password", component: PasswordComponent},
+  {path: "2fa", component: ToofaComponent},
   {path: "", component: GuideComponent}
 ];
 

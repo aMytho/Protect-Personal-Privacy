@@ -30,6 +30,9 @@ export class MdComponent {
       case 4: this.src = '/assets/posts/cases/breaches/openAI.md'; break;
       case 5: this.src = '/assets/posts/cases/free.md'; break;
       case 6: this.src = '/assets/posts/cases/simple.md'; break;
+      case 7: this.src = '/assets/posts/cases/breaches/carriers.md'; break;
+      case 8: this.src = '/assets/posts/cases/breaches/googleLocation.md'; break;
+      case 9: this.src = '/assets/posts/cases/breaches/facebookMeta.md'; break;
     }
   }
 

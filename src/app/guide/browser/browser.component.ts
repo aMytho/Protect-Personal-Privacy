@@ -7,6 +7,7 @@ import { animate, keyframes, state, style, transition, trigger } from '@angular/
   templateUrl: './browser.component.html',
   styleUrls: ["./browser.component.css"],
   animations: [
+    //Holds the color transforms
     trigger("toggleClick", [
       state('Chrome', style({
         background: "linear-gradient(to bottom, #176087, #2e5c91)"
@@ -17,6 +18,7 @@ import { animate, keyframes, state, style, transition, trigger } from '@angular/
       state('none', style({
         background: "#176087"
       })),
+      // CSS Gradients are not animatable. We go from one gradient, to a solid color, to a gradient as a workaround
       transition("Firefox <=> Chrome", animate("3000ms linear", keyframes([
         style({background: "#176087", offset: 0.5}),
       ])) ),
@@ -26,6 +28,7 @@ import { animate, keyframes, state, style, transition, trigger } from '@angular/
   ]
 })
 export class BrowserComponent {
+  //Selects the chrome and firefox sections
   @ViewChild("chrome")
   chrome!: ElementRef;
   @ViewChild("firefox")
@@ -33,8 +36,13 @@ export class BrowserComponent {
   
   public browser: browserSelection = "none";
 
+  /**
+   * Switches browsers. Hides one and shows the other.
+   * @param browser The new browser
+   */
   public swapBrowser(browser: browserSelection) {
     this.browser = browser;
+    //Scroll to the new section (Only works if one is already open)
     if (this.browser == "Chrome") {
       this.chrome.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
@@ -42,6 +50,10 @@ export class BrowserComponent {
     }
   }
 
+  /**
+   * Opens a link to a new domain
+   * @param link The new domain
+   */
   openLink(link: string) {
     window.open("https://" + link);
   }

@@ -14,6 +14,7 @@ export class GuideComponent {
    * @param page The page to switch to
    */
   public switchPages(page: string) {
+    // See guide-routing.module.ts
     this.router.navigate(["/guide/", page]);
   }
 }

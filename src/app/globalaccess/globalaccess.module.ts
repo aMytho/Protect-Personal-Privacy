@@ -5,7 +5,10 @@ import { MdComponent } from '../md/md.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
-
+/**
+ * Stores the markdown and HTTP client so any module that imports it has access to it.
+ * Imported into the root module and several others
+ */
 @NgModule({
   declarations: [
     MdComponent

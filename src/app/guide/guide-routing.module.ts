@@ -8,6 +8,7 @@ import { SimpleComponent } from './simple/simple.component';
 import { PasswordComponent } from './password/password.component';
 import { ToofaComponent } from './toofa/toofa.component';
 
+//Holds all the routes for each guide. If no route is provided, loads the guide homepage
 const routes: Routes = [
   {path: "browser", component: BrowserComponent},
   {path: "communication", component: CommunicationComponent},

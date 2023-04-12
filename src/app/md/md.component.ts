@@ -17,7 +17,7 @@ export class MdComponent {
   public src:string = "";
 
   /**
-   * Based on the ID, return the related post
+   * Based on the ID, set the related post
    * @param id The post to access
    */
   getPost(id: number) {

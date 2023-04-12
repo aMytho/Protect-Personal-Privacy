@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./info.component.css']
 })
 export class InfoComponent implements OnInit {
+  //Nav stores a ton of data about the user/their environment
   public nav = window.navigator;
 
+  //Info stores a lot of data from nav
   public info = {
     timeOpened:new Date(),
     timezone:(new Date()).getTimezoneOffset()/60,
@@ -34,6 +36,7 @@ export class InfoComponent implements OnInit {
     sizeAvailH: screen.availHeight,
     scrColorDepth: screen.colorDepth,
     scrPixelDepth: screen.pixelDepth,
+    //Below props require more permissions that most browsers give without authorization
     // latitude(){return position.coords.latitude},
     // longitude(){return position.coords.longitude},
     // accuracy(){return position.coords.accuracy},
@@ -42,11 +45,8 @@ export class InfoComponent implements OnInit {
     // heading(){return position.coords.heading},
     // speed(){return position.coords.speed},
     // timestamp(){return position.timestamp},
-
   };
 
-  ngOnInit(): void {
-
-    
-  }
+  //Nothing here...
+  ngOnInit(): void {}
 }

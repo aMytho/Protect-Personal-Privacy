@@ -4,6 +4,7 @@ import { AltServicesComponent } from './info/alt-services/alt-services.component
 import { InfoComponent } from './info/info.component';
 import { HomeComponent } from './home/home.component';
 
+// Loads each major route. Cases and guide have subroutes for each case/guide respectively
 const routes: Routes = [
   {path: "cases", loadChildren: () => import('./case/case.module').then(m => m.CaseModule)},
   {path: "guide", loadChildren: () => import("./guide/guide.module").then(m => m.GuideModule)},

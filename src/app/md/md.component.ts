@@ -33,6 +33,7 @@ export class MdComponent {
       case 7: this.src = '/assets/posts/cases/breaches/carriers.md'; break;
       case 8: this.src = '/assets/posts/cases/breaches/googleLocation.md'; break;
       case 9: this.src = '/assets/posts/cases/breaches/facebookMeta.md'; break;
+      case 10: this.src = '/assets/posts/cases/intheknow.md'; break;
     }
   }
 

@@ -9,6 +9,7 @@ import { WifiComponent } from './wifi/wifi.component';
 import { SimpleComponent } from './simple/simple.component';
 import { PasswordComponent } from './password/password.component';
 import { ToofaComponent } from './toofa/toofa.component';
+import { PhoneComponent } from './phone/phone.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ToofaComponent } from './toofa/toofa.component';
     WifiComponent,
     SimpleComponent,
     PasswordComponent,
-    ToofaComponent
+    ToofaComponent,
+    PhoneComponent
   ],
   imports: [
     CommonModule,

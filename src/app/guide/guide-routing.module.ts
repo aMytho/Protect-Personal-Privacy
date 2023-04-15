@@ -7,6 +7,7 @@ import { WifiComponent } from './wifi/wifi.component';
 import { SimpleComponent } from './simple/simple.component';
 import { PasswordComponent } from './password/password.component';
 import { ToofaComponent } from './toofa/toofa.component';
+import { PhoneComponent } from './phone/phone.component';
 
 //Holds all the routes for each guide. If no route is provided, loads the guide homepage
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: "simple", component: SimpleComponent},
   {path: "password", component: PasswordComponent},
   {path: "2fa", component: ToofaComponent},
+  {path: "phone", component: PhoneComponent},
   {path: "", component: GuideComponent}
 ];
 

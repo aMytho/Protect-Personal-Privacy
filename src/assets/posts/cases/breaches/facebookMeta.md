@@ -1,6 +1,6 @@
 # Meta (Facebook)
 
-Meta (formerly Facebook) is notorious for privacy violations. They have paid some of the highest fines among the big tech companies. Meta owns Facebook, Instagram, What's App, and Messenger.
+Meta (formerly Facebook) is notorious for privacy violations. They have paid some of the highest fines among the big tech companies. Meta owns Facebook, Instagram, What's App, and Messenger. Some of their past cases are documented below.
 
 ## Various Lawsuits / Privacy Issues
 
@@ -23,13 +23,13 @@ Facebook used Biometric identification software to "tag" users in photos and to 
 
 ### Sharing of Private Messages and Contacts
 
-- Unknown
+- Unknown amount
 
 Facebook shared user content to Amazon, Microsoft, Yahoo, Netflix, and over 150 others. The content included users' message content and private posts.
 
 ### Location Data
 
-- Unknown
+- Unknown amount
 
 Facebook ignores privacy switches and tracks location regardless of any settings. Facebook will attempt to determine your location from check-in services, profile data, physical location (traveling near a business that has facebook ads), WiFi, and Bluetooth services.
 

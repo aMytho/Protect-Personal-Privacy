@@ -1,0 +1,90 @@
+<div class="bg-lapis md:mx-20 mx-5 md:py-4 md:px-8 py-2 px-4 my-2 rounded-md prose guide colorLinks"
+    style="max-width: fit-content;">
+
+    <h1 id="top">
+        Accessing Unsafe Services
+    </h1>
+
+    <p>
+        Removing services is one of the most difficult steps to reclaim personal privacy. While you should remove the
+        services entirely, you may find that you simply <b>need</b> some services. This guide shows you how to
+        use these services.
+    </p>
+
+    <h2>
+        Use the Web Version
+    </h2>
+
+    <p>
+        Many services offer a mobile or desktop app to use their service. While these are convenient, they have more
+        potential to access your data. If a service has a website you should always use it instead of the app. This is
+        due to a concept called <em>sandboxing</em>. Sandboxing is a technique that limits what the service has access
+        to. The browser has a very strong sandbox environment. Unlike desktop or mobile, the browser assumes that a
+        website is potentially dangerous. It severely reduces what a service is able to access. Browsers are also able
+        to use extensions to limit the service further. If your service has a web version, uninstall the mobile/desktop versions.
+    </p>
+
+    <h3>
+        Choosing a Browser
+    </h3>
+
+    <p>
+        <em>
+            Much of this information is adopted from the <a href="/guide/browser">Browser Guide</a>. I highly suggest
+            you read it!
+        </em>
+    </p>
+
+    <p>
+        You need to choose a browser with strong privacy and sandboxing abilities. The main options are the <a
+            href="https://brave.com/">Brave Browser</a> and <a href="https://librewolf.net/">LibreWolf</a>. Both of
+        these are secure by default. However, we will go further. In both browsers, you should set the cookies, cache,
+        and site data to auto-delete. For Brave, this can be done on the <a href="brave://settings/privacy">Security
+            Page</a>. For Librewolf, this is done automatically.
+    </p>
+
+    <h3>
+        Using Extensions
+    </h3>
+
+    <p>
+        You will need several extensions to use a service safely. These are Ublock-Origin, Cookie-Autodelete, and
+        Decentraleyes. Ublock limits what the website is allowed to load. Common ads, trackers, and privacy invasive
+        scripts are blocked. Cookie-Autodelete can be set up to delete cookies when a tab is closed. Decentraleyes is
+        used to serve static CDN content from an alternative source. These three work together to protect your data.
+    </p>
+    
+    <h4>Ublock-Origin</h4>
+
+    <button class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm"
+        (click)="openLink('chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm')">Brave
+        Version</button>
+    <button class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm mx-2"
+        (click)="openLink('addons.mozilla.org/en-US/firefox/addon/ublock-origin/')">Librewolf Version</button>
+
+    <h4>Dencentraleyes</h4>
+
+    <button class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm mx-2"
+        (click)="openLink('chrome.google.com/webstore/detail/decentraleyes/ldpochfccmkkmhdbclfhpagapcfdljkj')">Brave
+        Version</button>
+    <button class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm"
+        (click)="openLink('addons.mozilla.org/en-US/firefox/addon/decentraleyes/')">Librewolf Version</button>
+
+    <h4>Cookie-Autodelete</h4>
+
+
+    <button class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm"
+        (click)="openLink('chrome.google.com/webstore/detail/cookie-autodelete/fhcgjolkccmbidfldomjliifgaodjagh')">Brave
+        Version</button>
+    <button class="p-2 bg-buttonNormal hover:bg-buttonHover text-white rounded-sm mx-2"
+        (click)="openLink('addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/')">Librewolf Version</button>
+
+
+    <h2>Reducing Dependence</h2>
+
+    <p>
+        While these tools make a service safer, they cannot <em>fully</em> protect you. Try to reduce the amount of time you use each service. Over time, you may find that you no longer need it.
+    </p>
+
+    <p><b>Preventing a tracker is great, but if you post your location to Facebook, what have you just done?</b></p>
+</div>

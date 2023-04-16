@@ -10,6 +10,8 @@ import { SimpleComponent } from './simple/simple.component';
 import { PasswordComponent } from './password/password.component';
 import { ToofaComponent } from './toofa/toofa.component';
 import { PhoneComponent } from './phone/phone.component';
+import { PcComponent } from './pc/pc.component';
+import { UnsafeComponent } from './unsafe/unsafe.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { PhoneComponent } from './phone/phone.component';
     SimpleComponent,
     PasswordComponent,
     ToofaComponent,
-    PhoneComponent
+    PhoneComponent,
+    PcComponent,
+    UnsafeComponent
   ],
   imports: [
     CommonModule,

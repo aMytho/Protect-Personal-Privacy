@@ -4,6 +4,11 @@
     <p class="text-center text-sm font-semibold">Select a category from below.</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-2" id="protection" (click)="switchPages('browser')">
+        <div class="bg-lighterBlue p-4 rounded-sm cursor-pointer hover:bg-cyan-600 border border-yellow-300 border-solid" (click)="switchPages('simple')">
+            <h2 class="text-center">Simple</h2>
+            <img src="" alt="">
+            <p>A general overview of this website in a single guide.</p>
+        </div>
         <div class="bg-lighterBlue p-4 rounded-sm cursor-pointer hover:bg-cyan-600">
             <h2 class="text-center">Browser</h2>
             <img src="" alt="">
@@ -19,11 +24,6 @@
             <img src="" alt="">
             <p>Protect your home network from intrusions and lower your data usage.</p>
         </div>
-        <div class="bg-lighterBlue p-4 rounded-sm cursor-pointer hover:bg-cyan-600 border border-yellow-300 border-solid" (click)="switchPages('simple')">
-            <h2 class="text-center">Simple</h2>
-            <img src="" alt="">
-            <p>A general overview of this website in a single guide.</p>
-        </div>
         <div class="bg-lighterBlue p-4 rounded-sm cursor-pointer hover:bg-cyan-600" (click)="switchPages('password')">
             <h2 class="text-center">Passwords</h2>
             <img src="" alt="">
@@ -38,6 +38,16 @@
             <h2 class="text-center">Choosing a Phone</h2>
             <img src="" alt="">
             <p>Choosing the right device from the start can make privacy much easier to obtain.</p>
+        </div>
+        <div class="bg-lighterBlue p-4 rounded-sm cursor-pointer hover:bg-cyan-600" (click)="switchPages('pc')">
+            <h2 class="text-center">Choosing a Latop/PC</h2>
+            <img src="" alt="">
+            <p>Choosing the right device from the start can make privacy much easier to obtain.</p>
+        </div>
+        <div class="bg-lighterBlue p-4 rounded-sm cursor-pointer hover:bg-cyan-600" (click)="switchPages('unsafe')">
+            <h2 class="text-center">Accessing Unsafe Services</h2>
+            <img src="" alt="">
+            <p>Some services you simply cannot live without. However, some can still be used safely.</p>
         </div>
     </div>
 </div>

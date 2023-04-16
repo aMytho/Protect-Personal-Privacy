@@ -8,6 +8,8 @@ import { SimpleComponent } from './simple/simple.component';
 import { PasswordComponent } from './password/password.component';
 import { ToofaComponent } from './toofa/toofa.component';
 import { PhoneComponent } from './phone/phone.component';
+import { PcComponent } from './pc/pc.component';
+import { UnsafeComponent } from './unsafe/unsafe.component';
 
 //Holds all the routes for each guide. If no route is provided, loads the guide homepage
 const routes: Routes = [
@@ -18,6 +20,8 @@ const routes: Routes = [
   {path: "password", component: PasswordComponent},
   {path: "2fa", component: ToofaComponent},
   {path: "phone", component: PhoneComponent},
+  {path: "pc", component: PcComponent},
+  {path: "unsafe", component: UnsafeComponent},
   {path: "", component: GuideComponent}
 ];
 

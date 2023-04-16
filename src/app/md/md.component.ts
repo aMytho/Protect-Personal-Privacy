@@ -21,7 +21,7 @@ export class MdComponent {
    * @param id The post to access
    */
   getPost(id: number) {
-    console.log(true)
+    console.log("Loading markdown with id of: " + id)
     switch(id) {
       case -1: this.src = '/assets/posts/alternativeServives.md'; break;
       case 1: this.src = '/assets/posts/demo copy.md'; break;
@@ -34,6 +34,7 @@ export class MdComponent {
       case 8: this.src = '/assets/posts/cases/breaches/googleLocation.md'; break;
       case 9: this.src = '/assets/posts/cases/breaches/facebookMeta.md'; break;
       case 10: this.src = '/assets/posts/cases/intheknow.md'; break;
+      case 11: this.src = '/assets/posts/cases/hide.md'; break;
     }
   }
 

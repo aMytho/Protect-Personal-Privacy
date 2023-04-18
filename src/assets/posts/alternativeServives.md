@@ -70,7 +70,7 @@ Signal offers free, highly encrypted messaging. You can set individual controls 
 
 #### Thunderbird <a style="text-decoration: none;" href="https://www.thunderbird.net/en-US/">&#128279;</a>
 
-Thunderbird is an open source app to view emails from any device. It is **not** and email service. Instead, it uses mail protocols to access your emails from any location. It has integrations with many of the existing email providers such as Gmail, Outlook, Yahoo, and more. It can also connect to RSS feeds to provide a custom new service. This is a very handy feature.
+Thunderbird is an open source app to view emails from any device. It is **not** an email service. Instead, it uses mail protocols to access your emails from any location. It has integrations with many of the existing email providers such as Gmail, Outlook, Yahoo, and more. It can also connect to RSS feeds to provide a custom new service. This is a very handy feature.
 
 ![Thunderbird Personal Feed](/assets/img/thunderbird.png)
 

@@ -6,6 +6,7 @@
     </p>
 
     <h2 class="text-white">Displays</h2>
+    <p>These properties contain info related to the display. They are used for features like responsiveness, auto-resize, and to dynamically show or hide content. They can also be used for identification. Using these properties, you can determine the exact position of the window across the viewer's monitors.</p>
     <table class="table-fixed border-collapse border border-solid border-spacing-2 border-pictonBlue text-white">
         <tr>
             <th>Property</th>
@@ -64,7 +65,7 @@
         <tr>
             <td>browserName</td>
             <td>{{info.browserName}}</td>
-            <td>The name of the browser</td>
+            <td>The name of the browser (compatibility, not the "brand" name)</td>
         </tr>
         <tr>
             <td>browserEngine</td>
@@ -89,7 +90,7 @@
         <tr>
             <td>browserOnline</td>
             <td>{{info.browserOnline}}</td>
-            <td>Whether the browser is currently online</td>
+            <td>Is there an available internet connection?</td>
         </tr>
         <tr>
             <td>browserPlatform</td>
@@ -99,12 +100,12 @@
         <tr>
             <td>javaEnabled</td>
             <td>{{info.javaEnabled}}</td>
-            <td>Whether Java is enabled in the browser</td>
+            <td>Is Java enabled?</td>
         </tr>
         <tr>
             <td>dataCookiesEnabled</td>
             <td>{{info.dataCookiesEnabled}}</td>
-            <td>Whether cookies are enabled in the browser</td>
+            <td>Are cookies enabled?</td>
         </tr>
         <tr>
             <td>dataCookies1</td>
@@ -148,7 +149,7 @@
         <tr>
             <td>referrer</td>
             <td>{{info.referrer}}</td>
-            <td>The URL of the referring page</td>
+            <td>The URL of the referring page (last page you visited)</td>
         </tr>
         <tr>
             <td>previousSites</td>
@@ -156,4 +157,22 @@
             <td>The number of sites in the browsing history</td>
         </tr>
     </table>
+
+    <h2 class="text-white">Locked Properties</h2>
+
+    <p>The above properties are available as soon as the user loads the page. They do not require any special permission. However, there are other properties that will require permission. These permissions can be used for a variety of unwanted purposes. They are listed below.</p>
+    <ul class="text-white">
+        <li>Microphone and Camera (Spying, everything implied)</li>
+        <li>Notifications (Ads)</li>
+        <li>Motion sensors (Determine your physical posture. Can be used to identify if you are paying attention to a website) </li>
+        <li>Protocol handlers (Hijack a protocol. For example, any email will now open in this website)</li>
+        <li>USB Devices / Serial Ports (Damage depending on what is plugged in)</li>
+        <li>Clipboard (Steal copied passwords and anything ready to be pasted)</li>
+        <li>Augmented Reality (Map your physical environment)</li>
+        <li>Window Management (Let it place browser windows on your display.)</li>
+    </ul>
+
+    <p>
+        While some of these are clearly bad, some do have practical uses. Its a good practice to deny these permissions unless you are sure a website needs it.
+    </p>
 </div>
